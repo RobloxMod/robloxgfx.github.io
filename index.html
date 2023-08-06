@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roblox GFX</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #007BFF;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            color: white;
+            font-size: 48px;
+            text-align: center;
+            animation: fadeInAnimation 2s;
+        }
+
+        @keyframes fadeInAnimation {
+            from {
+                opacity: 0;
+            }
+          to {
+                opacity: 1;
+            }
+        }
+
+        .typing-effect {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 3px solid white;
+            animation: typing 2.5s steps(40, end), blinkCursor 0.5s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blinkCursor {
+            from, to {
+                border-color: transparent;
+            }
+            50% {
+                border-color: white;
+            }
+        }
+      @media (min-width: 768px) {
+            .project-item {
+                display: block;
+            }
+            .project-description {
+                margin-left: 0;
+            }
+        }
+      .navbar {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+            cursor: pointer;
+            font-size: 18px;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: rgba(136, 136, 136, 0.5);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<a class="navbar" href="https://robloxgfx.notadmin.repl.co/sp">Service Rules / Privacy Policy</a>
+    <div>
+        <h2>
+            <span class="typing-effect">Hello, I'm NotAdmin</span>
+        </h2>
+    </div>
+</body>
+</html>
